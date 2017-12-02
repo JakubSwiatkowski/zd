@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var divs = $('.hidden');
+    var divs = $('.hid');
     var dir = 'up'; // wheel scroll direction
     var div = 0; // current div
     $(document.body).on('DOMMouseScroll mousewheel', function (e) {

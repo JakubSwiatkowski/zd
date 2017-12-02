@@ -9,6 +9,8 @@ body {
     display: block;
     margin-right: auto;
     margin-bottom: auto;   
+    font-family: Lato, Helvetica, sans-serif;
+    
 }
 
 
@@ -26,38 +28,44 @@ footer button {
     margin-left: 50em;
 }
 
-* {
-    display: block:
-}
-
 .mydiv {
-    padding-top: 50px;
     height:100vh;
 }
 
-.mydiv a:not(.hidden) {
+.mydiv a:not(.hid) {
     position: relative;
-    left: 50%;
     top: 80%;
+    left: 48%;
     display: block;    
 }
 
 a img {
+    margin: 0 auto;
     height: 50px;
     width: 50px;
 }
 
-.hidden {
+.hid {
     display: inline;  
-    visibility: hidden;      
+    visibility: hid;      
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 header {
     position: fixed;
     display: flex;
     -ms-flex-flow: row wrap;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    width: 100%;    
+    padding-top: 10px;
 }
 
 header img {
@@ -71,10 +79,15 @@ header img {
     display: flex;
     -ms-flex-flow: row wrap;
     justify-content: flex-end;
+    padding-right: 10px;
+    margin-right: 0px;
+}
+
+a1 {
+    padding-left: 35%;
 }
 
 .tekstnag a {
-    flex: 1 100%;
     display: block;
     margin-left: 10px;
 }
@@ -85,10 +98,56 @@ header img {
     padding-left: 10px;
 }
 
-header {
-    color: white;
+header .mydiv p {
+    text-align: center;
+    padding-top: 10%;
+    margin: 0 0 0 0;
+}
+
+.zarz {
+    margin: 0 auto;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  .slider {
+      width: 50%;
+      margin: 5% auto;
+  }
+
+  .slick-slide {
+    margin: 0px 20px;
+  }
+
+  .slick-slide img {
     width: 100%;
-    top: 10px;
-    right: 10px;
-    left: 10px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+
 }

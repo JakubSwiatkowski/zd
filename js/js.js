@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".tekstnag a").on('click', function(event) {
+    $(".mydiv a").on('click', function(event) {
   
       if (this.hash !== "") {
         event.preventDefault();
